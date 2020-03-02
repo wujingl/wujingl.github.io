@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>电脑租赁_租视界</title>
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 <body>
 	
@@ -17,30 +18,102 @@
 				<em>1819178766</em>
 			</span>
 		</div>
-		<img src="http://www.gzwxzl.com/data/upload/admin/20191122/5dd7a37215030.jpg" >
+	
+	<img src="http://www.gzwxzl.com/data/upload/admin/20191122/5dd7a43007419.jpg" >
 		
 		
-		<div class="container">
+	<div class="container">
 			
-			<div class="conleft">
-				<img src="img/logo1.gif" class="img" >
-				<img src="img/logo2.gif" class="img1" >
+		<div class="conleft">
+			<img src="img/logo1.gif" class="img" >
+			<img src="img/logo2.gif" class="img1" >
+			
+			<p class="p">联系我们:13269984222</p>
+			
+		</div>
+			
+	</div>
+	
+	
+	<div id="imgsbox">
+		
+		<div class="imgs">
+			<img src="http://www.gzwxzl.com/data/upload/admin/20191122/5dd7b46cf026e.jpg" >
+		</div>
+		<div id="lists">
+			
+			<div id="listleft">
+				<div class="elements">
+					<i class="el-icon-s-operation"></i>
+					<p>快速导航</p>
+				</div>
+				
+				<ul>
+					<li>
+						<span>
+							<span class="themes">
+								<em>办公电脑</em>
+							</span>
+						</span>
+					</li>
+					<li>
+						<span>
+							<span class="themes">
+								<em>办公外设</em>
+							</span>
+						</span>
+					</li>
+					<li>
+						<span>
+							<span class="themes">
+								<em>办公服务</em>
+							</span>
+						</span>
+					</li>
+					<li>
+						<span>
+							<span class="themes">
+								<em>增值服务</em>
+							</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="top">
+				
+				<ul>
+					<li>首页</li>
+					<li>短租服务</li>
+					<li>长租服务</li>
+					<li>销售专区</li>
+					<li>增值服务</li>
+					<li>口碑证言</li>
+					<li>回收设备</li>
+				</ul>
+				
 			</div>
 			
 		</div>
+		
 	</div>
+	</div>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 	
 </body>
-
 <style>
-	
 	*{
 		margin: 0;
 		padding: 0;
+		list-style:none; 
+	}
+	em{
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: none;
 	}
 	#tp{
 		width: 100%;
-		height: 40px;
 		background-color: #efefef;
 	}
 	.container{
@@ -62,6 +135,16 @@
 		width: 1200px;
 		height: 110px;
 		margin: 20px auto;
+		background: #000;
+	}
+	.conleft p{
+		width: 500px;
+		float: right;
+		color: #fff;
+		height: 110px;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 110px;
 	}
 	.img{
 		width: 200px;
@@ -71,6 +154,93 @@
 	.img1{
 		width: 200px;
 		height: 110px;
+	}
+	#imgsbox{
+		width: 100%;
+		height: 500px;
+		margin-top: 30px;
+		position: relative;
+	}
+	#lists{
+		width: 1200px;
+		height: 500px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#listleft{
+		width: 250px;
+		height: 450px;
+		position: absolute;
+		left: 0;
+		z-index: 2;
+		/* background-color: #0f7ad2; */
+		background-color:rgba(55,162,255,0.8)
+	}
+	#listleft ul{
+		box-sizing: border-box;
+		width: 100%;
+		position: absolute;
+		top: 41px;
+		padding: 20px 20px;
+		background-color: #0f7ad2;
+		opacity: .8;
+		z-index: 99999;
+	}
+	#listleft ul li{
+		color: #fff;
+		padding: 10px 0;
+		cursor: pointer;
+		border-bottom: 1px solid #3f95db;
+	}
+	#listleft ul li span.themes {
+	    line-height: 30px;
+	}
+	.elements{
+		width: 230px;
+		height: 40px;
+		line-height: 40px;
+		float: right;
+	}
+	.elements i{
+		font-size: 24px;
+		margin-top: 8px;
+		color: #fff;
+	}
+	.elements p{
+		width: 200px;
+		height: 40px;
+		float: right;
+		line-height: 40px;
+		color: #fff;
+		font-size: 16px;
+		text-indent: 10px;
+	}
+	#top{
+		width: 950px;
+		height: 40px;
+		float: right;
+	}
+	.imgs{
+		position: absolute;
+		top: 40px;
+		z-index: 1;
+	}
+	#top ul{
+		margin-left: 20px;
+		margin-top: 7px;
+	}
+	#top ul li{
+		width: 88px;
+		height: 26px;
+		text-align: center;
+		line-height: 26px;
+		float: left;
+		margin: 0 15px;
+	}
+	#top ul li:hover{
+		color: #fff;
+		background-color: #37a3ff;
+		border-radius: 15px;
 	}
 </style>
 </html>
